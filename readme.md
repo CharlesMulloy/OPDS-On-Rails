@@ -12,5 +12,5 @@ Launch:
 	1. Navigate to the root of the project (skip this step if you are already there)
 	2. Run the command 'rails s'
 
-configuration:
+Configuration:
 	When you connect to the OPDS using your reader, make sure that you connect to port 3000.
