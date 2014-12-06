@@ -5,7 +5,7 @@ Setup:
 	1. Download the project to a folder on your computer. 
 	2. Navigate to the root folder of the application in a terminal. 
 	3. Run the command 'bundle install'. 
-	4. Place your epub files in /files.
+	4. Create a folder called 'files' and place it at the root of the application. Your files are listed in real time.
 
 Launch:
 
