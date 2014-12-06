@@ -17,7 +17,7 @@ class OpdsController < ApplicationController
 
   	@books = []
 
-	for i in Dir["files/*.*"]  	
+	for i in Dir["files/*.epub*"]  	
 		Zip::ZipFile.open(i){
 			|zipfile|
 			root_path = Nokogiri::XML(zipfile.read("META-INF/container.xml")).css('rootfile')[0]['full-path']
@@ -82,7 +82,7 @@ class OpdsController < ApplicationController
 
   	@books = []
 
-	for i in Dir["files/#{params['path']}/*.*"]  	
+	for i in Dir["files/#{params['path']}/*.epub"]  	
 		Zip::ZipFile.open(i){
 			|zipfile|
 			root_path = Nokogiri::XML(zipfile.read("META-INF/container.xml")).css('rootfile')[0]['full-path']
@@ -137,7 +137,7 @@ class OpdsController < ApplicationController
 
   	if params['path'] == nil
 
-  		files = Dir["files/*.*"]
+  		files = Dir["files/*.epub*"]
 
   		send_file files[params['index'].to_i]
 
@@ -145,7 +145,7 @@ class OpdsController < ApplicationController
 
   		puts params['path']
 
-  		files = Dir["files/#{params['path']}/*.*"]
+  		files = Dir["files/#{params['path']}/*.epub"]
 
   		send_file files[params['index'].to_i]
 
@@ -159,7 +159,7 @@ class OpdsController < ApplicationController
 
    	if params['path'] == nil
 
-   		files = Dir["files/*.*"]
+   		files = Dir["files/*.epub"]
 
   		Zip::ZipFile.open("#{files[params['index'].to_i]}"){
 			|zipfile|
@@ -182,7 +182,7 @@ class OpdsController < ApplicationController
 
   	else
 
-  		files = Dir["files/#{params['path']}/*.*"]
+  		files = Dir["files/#{params['path']}/*.epub"]
 
   		Zip::ZipFile.open("#{files[params['index'].to_i]}"){
   			|zipfile|
