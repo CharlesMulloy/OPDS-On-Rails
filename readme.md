@@ -13,4 +13,5 @@ Launch:
 	2. Run the command 'rails s'
 
 Configuration:
-	When you connect to the OPDS using your reader, make sure that you connect to port 3000.
+	When you connect to the OPDS using your reader, make sure that you connect to port 3000. This application only supports .epub files at the moment.
+	Anything else in 'files' or its subdirectories will break the application, no exceptions. (I plan to fix this error.)
