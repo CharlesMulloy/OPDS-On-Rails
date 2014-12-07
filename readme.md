@@ -1,6 +1,7 @@
 This application is really easy to use. You only need to follow the setup instructions once, then you can launch the application at will.
 
 Requirements:
+
 	1. Ruby 2.0.0
 	2. RubyGems (probably already installed if you have Ruby)
 
