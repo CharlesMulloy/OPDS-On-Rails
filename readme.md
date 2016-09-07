@@ -7,15 +7,15 @@ Requirements:
 
 Setup:
 
-	1. Download the project to a folder on your computer. 
-	2. Navigate to the root folder of the application in a terminal. 
-	3. Run the command 'bundle install'. 
-	4. Create a folder called 'files' and place it at the root of the application. Put your files in this folder.
+	1. Download the project to a folder on your computer.
+	2. Navigate to the root folder of the application in a terminal.
+	3. Run the command 'bundle install'.
+	4. Create a folder called 'files' and place it at the root of the application. Put your files in this folder to make them available.
 
 Launch:
 
-	1. Navigate to the root of the project (skip this step if you are already there)
-	2. Run the command 'rails s'
+	1. Navigate to the root of the project
+	2. Run the command 'rails s' to start the server.
 
 Configuration:
 	When you connect to the OPDS using your reader, make sure that you connect to port 3000. This application only supports .epub files at the moment.
